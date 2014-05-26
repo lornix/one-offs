@@ -5,8 +5,7 @@ int main()
 {
     int a=17;
     int b;
-    asm(".byte 0xd6;"
-        "movl %1, %%eax;"
+    asm("movl %1, %%eax;"
         "addl %%eax,%%eax;"
         "movl %%eax, %0;"
         :"=r" (b)
